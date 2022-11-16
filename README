@@ -1,0 +1,2 @@
+##comando para despliegue
+ng deploy --base-href=/chiclayoProject/ 
