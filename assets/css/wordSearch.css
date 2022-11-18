@@ -3,7 +3,7 @@
   background: #306a8b;
 } */
 .puzzleWrap {
-  width: 850px;
+  width: 80rem;
   margin: 50px auto 0;
 }
 /* p {
@@ -16,7 +16,7 @@
   /* padding: 20px; */
   float: left;
   /* margin: 30px 20px; */
-  width: 550px;
+  width: 60rem;
 }
 #puzzle div {
   width: 100%;
@@ -24,14 +24,14 @@
 }
 /* style for each square in the puzzle */
 #puzzle .puzzleSquare {
-  height: 30px;
-  width: 30px;
+  height: 3rem;
+  width: 3rem;
   text-transform: uppercase;
-  background-color: #306a8b;
+  background-color: #f4c63c;
   border: 0;
   outline: none;
-  font: 1em sans-serif;
-  color: #6891ad;
+  font: 1.5rem sans-serif;
+  color: black;
 }
 button::-moz-focus-inner {
   border: none;
@@ -39,7 +39,7 @@ button::-moz-focus-inner {
 }
 /* indicates when a square has been selected */
 #puzzle .selected {
-  color: #ee5426;
+  color: white;
   outline: none;
 }
 #puzzle .selected:focus {
@@ -47,19 +47,21 @@ button::-moz-focus-inner {
 }
 /* indicates that the square is part of a word that has been found */
 #puzzle .found {
-  color: #f4c63c;
+  color: white;
 }
 #puzzle .solved {
-  color: #ee5426;
+  color: white;
 }
 /* indicates that all words have been found */
 #puzzle .complete {
-  background-color: green;
+  background-color: #3bff5f;
 }
 /** * Styles for the word list */
 #words {
+  margin-top: 4rem;
+  margin-left: 2rem;
   width: 250px;
-  color: #6891ad;
+  color: #25192e;
   float: left;
   /* margin-top: 37px; */
 }
@@ -71,12 +73,12 @@ button::-moz-focus-inner {
   font: 1em sans-serif;
   display: inline-block;
   float: left;
-  width: 100px;
+  width: 7.5rem;
 }
 /* indicates that the word has been found */
 #words .wordFound {
   text-decoration: line-through;
-  color: #ee5426;
+  color: #c42340;
 }
 /** * Styles for the button */
 #solve {

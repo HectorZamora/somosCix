@@ -1296,12 +1296,19 @@ p {
 .navbar-nav .nav-item.active a,
 .navbar-nav .nav-item a:hover {
   --text-opacity: 1;
-  color: #c42340;
   color: rgba(244, 198, 60, var(--text-opacity));
 }
 
+.navbar-nav .nav-item.active2 a,
+.navbar-nav .nav-item .rosa:hover {
+  --text-opacity: 1;
+  color: rgba(196, 35, 64, var(--text-opacity));
+}
+
 .navbar-nav .nav-item.active a::before,
+.navbar-nav .nav-item.active #rosa::before,
 .navbar-nav .nav-item.active a::after,
+.navbar-nav .nav-item.active #rosa::after,
 .navbar-nav .nav-item a:hover::before,
 .navbar-nav .nav-item a:hover::after {
   opacity: 1;
@@ -1316,8 +1323,20 @@ p {
   height: 0.25rem;
   transition-duration: 300ms;
   --bg-opacity: 1;
-  background-color: #c42340;
   background-color: rgba(244, 198, 60, var(--bg-opacity));
+  opacity: 0;
+}
+
+.navbar-nav .nav-item .rosa::after,
+.navbar-nav .nav-item .rosa::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 0.5rem;
+  height: 0.25rem;
+  transition-duration: 300ms;
+  --bg-opacity: 1;
+  background-color: rgba(196, 35, 64, var(--bg-opacity));
   opacity: 0;
 }
 
